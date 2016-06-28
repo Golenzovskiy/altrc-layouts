@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,7 +51,58 @@
 </div>
     <div class="container">
         <div class="row">
-            <h1>Название страницы</h1>
+           <div class="col-lg-7 ">
+           <h3>Поиск по reference</h3>
+                <div class="panel panel-default">
+                   <div class="panel-body">
+                       <div class="inpanel"><h4>Выбирите год</h4>
+                          <div class="row">
+                              <div class="col-lg-3">
+                               <input class="form-control input-sm" type="text" placeholder="28.06.2015">
+                              </div>
+                             <div class="col-lg-3">
+                               <input class="form-control input-sm" type="text" placeholder="28.06.2016">
+                              </div>
+                          </div>
+                       </div>
+                      <div class="col-lg-6">
+                          <h4>Выбирите услугу</h4>
+                        <select multiple class="form-control">
+                            <option>Стратегический маркетинг</option>
+                            <option>Стратегия и развитие бизнеса</option>
+                            <option>Оргструктура и изменения</option>
+                            <option>Бенчмаркинг и зарубежные рынки</option>
+                        </select>
+                      </div>
+                      <div class="col-lg-6">
+                       <h4>Выбирите отрасль</h4>
+                        <select multiple class="form-control">
+                            <option>FMCG и потребительские товары</option>
+                            <option>Добыча, сырье и материалы</option>
+                            <option>Ритейл, логистика и дистрибуция</option>
+                            <option>Машиностроение и инжиниринг</option>
+                            <option>Медицина и фармацевтика</option>
+                            <option>Строительство и стройматериалы</option>
+                            <option>Химия и энергетика</option>
+                            <option>Государственные органы и компании</option>
+                        </select>
+                      </div>                      
+                    </div><div class="inpanel"><a href="#" class="btn btn-primary" role="button">Фильтровать</a></div>
+               </div>
+           <h3>Результаты поиска</h3>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <p>Тут появляются результаты поиска по фильтру...</p>
+                </div>
+           </div> 
+           </div>
+            <div class="col-lg-5">
+            <h3>Результаты поиска</h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                      <p>Сюда перетаскиваем reference...</p>
+                    </div>
+                </div>
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
