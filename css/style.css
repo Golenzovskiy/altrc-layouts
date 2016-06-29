@@ -1,5 +1,8 @@
-.btm {
-    padding: 15px;
+.pbtn {
+    padding: 15px 15px 0;
+}
+.rbtn {
+    float: right;
 }
 .imgl {
     max-width: auto;
