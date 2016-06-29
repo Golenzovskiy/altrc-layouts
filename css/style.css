@@ -1,3 +1,8 @@
-.inpanel {
-    padding: 0 0 15px 15px;
+.btm {
+    padding: 15px;
+}
+.imgl {
+    max-width: auto;
+    height: 100%;
+    display: block;
 }
