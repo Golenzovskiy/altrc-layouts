@@ -58,7 +58,7 @@ $(function() {
     </div>
     <div class="collapse navbar-collapse" id="resonsive-menu">
         <ul class="nav navbar-nav">
-            <li><a href="index.html">Найти референц</a></li>
+            <li><a href="index.html">Найти референцию</a></li>
             <!--li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2 <b class="caret"></b></a>
                 <ul class="dropdown-menu">
@@ -81,56 +81,68 @@ $(function() {
            <div class="panel panel-default">
                <div class="panel-body">
                    <div class="row">
-                       <div class="col-lg-6"><h4>Название проекта</h4>
-                            <input type="text" class="form-control" placeholder="Введите слово...">
-                       </div>
-                       <div class="col-lg-6">
-                           <h4>Выбирите год</h4>
+                       <div class="col-lg-8">
+                           <h4>Название проекта</h4>
+                           <input type="text" class="form-control" placeholder="Введите слово...">
+                           <div class="row">
+                               <div class="col-lg-6">
+                               <h4>Логотип компании</h4>
+                               <!--img border="0" src="http://altrc.ru/upload/resize_cache/iblock/51a/105_105_1/51a4670556ade39f7f5d85aafd740df1.png"-->
+                               <input type="file" id="exampleInputFile">
+                               </div>
+                               <div style="z-index: 2" class="col-lg-6">
+                               <h4>Выбирите год</h4>
                                <input class="form-control" type="text" placeholder="2015" id="from">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-lg-4">
+                           <h4>Выбирите услугу</h4>
+                           <select class="form-control">
+                               <option>Стратегический маркетинг</option>
+                               <option>Стратегия и развитие бизнеса</option>
+                               <option>Оргструктура и изменения</option>
+                               <option>Бенчмаркинг и зарубежные рынки</option>
+                           </select>
+                           <h4>Выбирите отрасль</h4>
+                           <select class="form-control">
+                               <option>FMCG и потребительские товары</option>
+                               <option>Добыча, сырье и материалы</option>
+                               <option>Ритейл, логистика и дистрибуция</option>
+                               <option>Машиностроение и инжиниринг</option>
+                               <option>Медицина и фармацевтика</option>
+                               <option>Строительство и стройматериалы</option>
+                               <option>Химия и энергетика</option>
+                               <option>Государственные органы и компании</option>
+                           </select>
                        </div>
                    </div>
+                   <div class="list-group top">
+                       <a href="#" class="list-group-item active">
+                           <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
+                           Исследование рынка и рекомендации по наращиванию объемов продаж на российском рынке компании "Volvo Penta"
+                       </a>
+                       <a href="#" class="list-group-item">
+                           <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
+                           Оценка емкости ключевых потребительских сегментов российского рынка для компании
+                       </a>
+                       <a href="#" class="list-group-item">
+                           <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
+                           Разработка стратегии развития компании
+                       </a>
+                       <a href="#" class="list-group-item">
+                           <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
+                           Оптимизация затрат на логистику: варианты реорганизации товарных потоков и распределительной сети Холдинга
+                       </a>
+                       <a href="#" class="list-group-item">
+                           <span class="glyphicon glyphicon-plus" aria-hidden="true">&nbsp;</span>
+                           <i>Добавить строку</i>
+                       </a>
+                   </div>
                    <div class="row">
-                  <div class="col-lg-6">
-                      <h4>Выбирите услугу</h4>
-                    <select multiple class="form-control">
-                        <option>Стратегический маркетинг</option>
-                        <option>Стратегия и развитие бизнеса</option>
-                        <option>Оргструктура и изменения</option>
-                        <option>Бенчмаркинг и зарубежные рынки</option>
-                    </select>
-                  </div>
-                  <div class="col-lg-6">
-                   <h4>Выбирите отрасль</h4>
-                    <select multiple class="form-control">
-                        <option>FMCG и потребительские товары</option>
-                        <option>Добыча, сырье и материалы</option>
-                        <option>Ритейл, логистика и дистрибуция</option>
-                        <option>Машиностроение и инжиниринг</option>
-                        <option>Медицина и фармацевтика</option>
-                        <option>Строительство и стройматериалы</option>
-                        <option>Химия и энергетика</option>
-                        <option>Государственные органы и компании</option>
-                    </select>
-                  </div>
-                       </div>
-                    <div class="table-responsive pbtn">
-                    <table class="table table-striped table-hover">
-                       <tr>
-                           <th><span class="glyphicon glyphicon-edit" aria-hidden="true">&nbsp;</span>
-                           Исследование рынка и рекомендации по наращиванию объемов продаж на российском рынке компании "Volvo Penta"</th>
-                       </tr>
-                       <tr>
-                           <td><span class="glyphicon glyphicon-edit" aria-hidden="true">&nbsp;</span>
-                           Оценка перспективности организации производства рентгено-диагностических оборудования в России для Siemens</td>
-                       </tr>
-                       <tr>
-                           <td><span class="glyphicon glyphicon-edit" aria-hidden="true">&nbsp;</span>
-                           Оценка потенциала развития на российском рынке в отраслях-потребителях всех бизнес-направлений компании Oerlikon Group</td>
-                       </tr>
-                    </table>
-                    </div>
-                    <div class="col-lg-12 pbtn"><a href="index.html"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true">&nbsp;</span>Вернуться к фильтру</a></div>
-               </div>
+                       <div class="col-lg-12 pbtn"><button type="button" class="rbtn btn btn-primary">Сохранить</button></div>
+                   </div>
+                   </div>
             </div>
         </div>
     </div>
@@ -138,6 +150,7 @@ $(function() {
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
 <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
+<script src="js/datepicker-ru.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
