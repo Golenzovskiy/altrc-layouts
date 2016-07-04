@@ -10,7 +10,6 @@
     <!-- Bootstrap -->
     <link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <link rel="stylesheet" type="text/css"
           href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/flick/jquery-ui.css">
     <link href="css/jquery.tagit.css" rel="stylesheet" type="text/css">
@@ -23,39 +22,6 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script>
-        $(function () {
-            $("#from").datepicker({
-                dateFormat: "dd.mm.yy",
-                defaultDate: -365,
-                changeYear: true,
-                numberOfMonths: 1,
-                onClose: function (selectedDate) {
-                    $("#to").datepicker("option", "minDate", selectedDate);
-                }
-            });
-            $("#to").datepicker({
-                dateFormat: "dd.mm.yy",
-                changeYear: true,
-                numberOfMonths: 1,
-                onClose: function (selectedDate) {
-                    $("#from").datepicker("option", "maxDate", selectedDate);
-                }
-            });
-        });
-    </script>
-
-    <script src="js/tag-it.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        $(function () {
-            var sampleTags = ['c++', 'java', 'php', 'coldfusion', 'javascript', 'asp', 'ruby', 'python', 'c', 'scala', 'groovy', 'haskell', 'perl', 'erlang', 'apl', 'cobol', 'go', 'lua'];
-            $('#FieldTags').tagit({
-                availableTags: sampleTags
-            });
-        });
-    </script>
 </head>
 <body>
 <div class="navbar navbar-default navbar-static-top">
@@ -232,12 +198,11 @@
         </div>
     </div>
 </div>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-
-<!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
-<script src="js/datepicker-ru.js"></script>
-
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/datepicker-ru.js"></script>
+<script src="js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
