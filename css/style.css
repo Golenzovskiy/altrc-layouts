@@ -15,3 +15,7 @@
 .top {
     padding: 15px 0;
 }
+A.dashed {
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
