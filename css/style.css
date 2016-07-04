@@ -1,24 +1,30 @@
 .pbtn {
     padding: 15px 15px 0;
 }
+
 .rbtn {
     float: right;
 }
+
 .imgl {
     max-width: auto;
     height: 100%;
     display: block;
 }
+
 .center {
     text-align: center;
 }
+
 .top {
     padding: 15px 0;
 }
+
 A.dashed {
     text-decoration: none;
     border-bottom: 1px dashed;
 }
-.gray-table{
-    background-color: #fcfcfc;   
+
+.gray-table {
+    background-color: #fcfcfc;
 }
