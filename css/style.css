@@ -19,3 +19,6 @@ A.dashed {
     text-decoration: none;
     border-bottom: 1px dashed;
 }
+.gray-table{
+    background-color: #fcfcfc;   
+}

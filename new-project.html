@@ -96,7 +96,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-lg-12">
                             <h4>Название проекта</h4>
                             <input type="text" class="form-control" placeholder="Введите слово...">
                             <div class="row">
@@ -111,16 +111,18 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-6">
                             <h4>Выберите услугу</h4>
-                            <select class="form-control">
+                            <select multiple class="form-control">
                                 <option>Стратегический маркетинг</option>
                                 <option>Стратегия и развитие бизнеса</option>
                                 <option>Оргструктура и изменения</option>
                                 <option>Бенчмаркинг и зарубежные рынки</option>
                             </select>
+                        </div>
+                        <div class="col-lg-6">
                             <h4>Выберите отрасль</h4>
-                            <select class="form-control">
+                            <select multiple class="form-control">
                                 <option>FMCG и потребительские товары</option>
                                 <option>Добыча, сырье и материалы</option>
                                 <option>Ритейл, логистика и дистрибуция</option>
@@ -138,30 +140,77 @@
                                    name="tags" value="Пищёвка, Стройка">
                         </div>
                     </div>
-                    <div class="list-group top">
-                        <a href="#" class="list-group-item active">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
-                            Исследование рынка и рекомендации по наращиванию объемов продаж на российском рынке компании
-                            "Volvo Penta"
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
-                            Оценка емкости ключевых потребительских сегментов российского рынка для компании
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
-                            Разработка стратегии развития компании
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true">&nbsp;</span>
-                            Оптимизация затрат на логистику: варианты реорганизации товарных потоков и распределительной
-                            сети Холдинга
-                        </a>
-                        <a href="#" class="list-group-item">
-                            <span class="glyphicon glyphicon-plus" aria-hidden="true">&nbsp;</span>
-                            <i>Добавить строку</i>
-                        </a>
-                    </div>
+                        <div class="table-responsive">
+                            <table class="table table-default table-hover gray-table">
+                               <tr>
+                                   <th>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Edit reference">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Delete reference" disabled="disabled">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                   Исследование рынка и рекомендации по наращиванию объемов продаж на российском рынке компании "Volvo Penta"</th>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Edit reference">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Delete reference">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                   Оценка перспективности организации производства рентгено-диагностических оборудования в России</td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Edit reference">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Delete reference">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                   Оценка потенциала развития на российском рынке в отраслях-потребителях всех бизнес-направлений компании</td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Edit reference">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Delete reference">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                   Оценка перспективности организации производства рентгено-диагностических оборудования в России</td>
+                               </tr>
+                               <tr>
+                                   <td>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Edit reference">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Delete reference">
+                                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                   Оценка потенциала развития на российском рынке в отраслях-потребителях всех бизнес-направлений компании</td>
+                               </tr>
+                                <tr>
+                                   <td>
+                                        <button type="button" class="btn btn-link btn-sm" aria-label="Add reference">
+                                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                        </button>
+                                       <i><a href="#">Добавить референцию</a></i></td>
+                               </tr>
+                            </table>
+                            </div>
                     <div class="row">
                         <div class="col-lg-12 pbtn">
                             <button type="button" class="rbtn btn btn-primary">Сохранить</button>
