@@ -38,9 +38,13 @@ $(document).ready(function () {
     });
 
     $(function () {
-        var sampleTags = ['c++', 'java', 'php', 'coldfusion', 'javascript', 'asp', 'ruby', 'python', 'c', 'scala', 'groovy', 'haskell', 'perl', 'erlang', 'apl', 'cobol', 'go', 'lua'];
+        var sampleTags = ['пищёвка', 'стройка', 'абвгд', 'еёжз'];
         $('#FieldTags').tagit({
             availableTags: sampleTags
         });
     });
+    $('#readOnlyTags').tagit({
+        readOnly: true
+    });
+    
 });
