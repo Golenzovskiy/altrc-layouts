@@ -21,22 +21,24 @@ $(document).ready(function () {
 
     $(function () {
         $('#filter').click(function (e) {
-            $("#searchResult").removeClass('hidden');
+
             e.preventDefault();
             var l = Ladda.create(this);
             l.start();
-            $.post("your-url",
-                {data: data},
+            $.post("filter.php",
+                {data: $('form').serialize()},
                 function (response) {
                     console.log(response);
+					$('#amount').text(response.amount);
+					$("#searchResult").removeClass('hidden');
                 }, "json")
-                .always(function () {
+                .always(function () {					
                     l.stop();
                 });
             return false;
         });
     });
-
+    
     $(function () {
         var sampleTags = ['пищёвка', 'стройка', 'абвгд', 'еёжз'];
         $('#FieldTags').tagit({

@@ -62,9 +62,10 @@
             <h3>Поиск по проектам</h3>
             <div class="panel panel-default">
                 <div class="panel-body">
+                   <form>
                     <div class="row">
                         <div class="col-lg-6"><h4>Поиск по референциям</h4>
-                            <input type="text" class="form-control" placeholder="Введите слово...">
+                            <input name="project" type="text" class="form-control" placeholder="Введите слово...">
                         </div>
                         <div class="col-lg-6">
                             <h4>Выберите год</h4>
@@ -118,11 +119,11 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-12 pbtn">
-                            <button id="filter" type="button" class="rbtn btn btn-primary ladda-button"
-                                    data-style="zoom-out"><span class="ladda-label">Фильтровать</span></button>
-                            <!--button class="btn btn-primary ladda-button" data-style="expand-left"><span class="ladda-label">expand-left</span></button-->
+                            <button type="button" class="rbtn btn btn-primary ladda-button"
+                                    data-style="zoom-out" id="filter"><span class="ladda-label">Фильтровать</span></button>
                         </div>
                     </div>
+                    </form>
                 </div>
             </div>
             <div id="searchResult" class="hidden">
@@ -146,7 +147,7 @@
                     </div>
                 </div>
             </div>
-                <h3>Результаты поиска&nbsp;<span class="badge">3</span></h3>
+                <h3>Результаты поиска&nbsp;<span id="amount" class="badge"></span></h3>
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
