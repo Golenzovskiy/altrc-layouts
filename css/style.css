@@ -28,3 +28,7 @@ A.dashed {
 .gray-table {
     background-color: #fcfcfc;
 }
+.label.tag {
+    font-size: small;
+    text-decoration: inherit;
+}
