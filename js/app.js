@@ -29,16 +29,16 @@ $(document).ready(function () {
                 {data: $('form').serialize()},
                 function (response) {
                     console.log(response);
-					$('#amount').text(response.amount);
-					$("#searchResult").removeClass('hidden');
+                    $('#amount').text(response.amount);
+                    $("#searchResult").removeClass('hidden');
                 }, "json")
-                .always(function () {					
+                .always(function () {
                     l.stop();
                 });
             return false;
         });
     });
-    
+
     $(function () {
         var sampleTags = ['пищёвка', 'стройка', 'абвгд', 'еёжз'];
         $('#FieldTags').tagit({
@@ -48,5 +48,5 @@ $(document).ready(function () {
     $('#readOnlyTags').tagit({
         readOnly: true
     });
-    
+
 });
