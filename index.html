@@ -8,6 +8,7 @@
     <title>Alt concept</title>
 
     <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://bootswatch.com/simplex/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/ladda-themeless.min.css">
@@ -62,83 +63,84 @@
             <h3>Поиск по проектам</h3>
             <div class="panel panel-default">
                 <div class="panel-body">
-                   <form>
-                    <div class="row">
-                        <div class="col-lg-6"><h4>Поиск по референциям</h4>
-                            <input name="project" type="text" class="form-control" placeholder="Введите слово...">
-                        </div>
-                        <div class="col-lg-6">
-                            <h4>Выберите год</h4>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" type="text" placeholder="2015" id="from">
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                    <input class="form-control" type="text" placeholder="2016" id="to">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-6"><h4>Поиск по референциям</h4>
+                                <input name="project" type="text" class="form-control" placeholder="Введите слово...">
+                            </div>
+                            <div class="col-lg-6">
+                                <h4>Выберите год</h4>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <input class="form-control" type="text" placeholder="2015" id="from">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <input class="form-control" type="text" placeholder="2016" id="to">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-4">
-                            <h4>Выберите услугу</h4>
-                            <select multiple class="form-control">
-                                <option>Стратегический маркетинг</option>
-                                <option>Стратегия и развитие бизнеса</option>
-                                <option>Оргструктура и изменения</option>
-                                <option>Бенчмаркинг и зарубежные рынки</option>
-                            </select>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h4>Выберите услугу</h4>
+                                <select multiple class="form-control">
+                                    <option>Стратегический маркетинг</option>
+                                    <option>Стратегия и развитие бизнеса</option>
+                                    <option>Оргструктура и изменения</option>
+                                    <option>Бенчмаркинг и зарубежные рынки</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4>Выберите отрасль</h4>
+                                <select multiple class="form-control">
+                                    <option>FMCG и потребительские товары</option>
+                                    <option>Добыча, сырье и материалы</option>
+                                    <option>Ритейл, логистика и дистрибуция</option>
+                                    <option>Машиностроение и инжиниринг</option>
+                                    <option>Медицина и фармацевтика</option>
+                                    <option>Строительство и стройматериалы</option>
+                                    <option>Химия и энергетика</option>
+                                    <option>Государственные органы и компании</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <h4>География</h4>
+                                <select multiple class="form-control">
+                                    <option>Россия и СНГ</option>
+                                    <option>Китай</option>
+                                    <option>Индия</option>
+                                    <option>США</option>
+                                    <option>Индонезия</option>
+                                    <option>Бразилия</option>
+                                    <option>Пакистан</option>
+                                    <option>Нигерия</option>
+                                    <option>Бангладеш</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                            <h4>Выберите отрасль</h4>
-                            <select multiple class="form-control">
-                                <option>FMCG и потребительские товары</option>
-                                <option>Добыча, сырье и материалы</option>
-                                <option>Ритейл, логистика и дистрибуция</option>
-                                <option>Машиностроение и инжиниринг</option>
-                                <option>Медицина и фармацевтика</option>
-                                <option>Строительство и стройматериалы</option>
-                                <option>Химия и энергетика</option>
-                                <option>Государственные органы и компании</option>
-                            </select>
+                        <div class="row">
+                            <div class="col-lg-12 pbtn">
+                                <button type="button" class="rbtn btn btn-primary ladda-button"
+                                        data-style="zoom-out" id="filter"><span class="ladda-label">Фильтровать</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-lg-4">
-                           <h4>География</h4>
-                            <select multiple class="form-control">
-                               <option>Россия и СНГ</option>
-                                <option>Китай</option>
-                                <option>Индия</option>
-                                <option>США</option>
-                                <option>Индонезия</option>
-                                <option>Бразилия</option>
-                                <option>Пакистан</option>
-                                <option>Нигерия</option>
-                                <option>Бангладеш</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 pbtn">
-                            <button type="button" class="rbtn btn btn-primary ladda-button"
-                                    data-style="zoom-out" id="filter"><span class="ladda-label">Фильтровать</span></button>
-                        </div>
-                    </div>
                     </form>
                 </div>
             </div>
             <div id="searchResult" class="hidden">
-            <h3>Поиск по тегам</h3>
-            <div class="panel panel-default">
-                <div class="panel-body">
-                   <div class="row">
-                       <div class="col-lg-12">
-						<a href="#"><span class="label label-primary tag">Пищёвка</span></a>
-						<a href="#"><span class="label label-primary tag">Стройка</span></a>
-						<a href="#"><span class="label label-primary tag">Авто</span></a>
-                       </div>
+                <h3>Поиск по тегам</h3>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <a href="#"><span class="label label-primary tag">Пищёвка</span></a>
+                                <a href="#"><span class="label label-primary tag">Стройка</span></a>
+                                <a href="#"><span class="label label-primary tag">Авто</span></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
                 <h3>Результаты поиска&nbsp;<span id="amount" class="badge"></span></h3>
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -184,6 +186,12 @@
                                         <td colspan="5">
                                             <div class="panel panel-default">
                                                 <div class="panel-body">
+													<div class="btn-toolbar">
+														<div class="btn-group pull-right">
+															<a href="#" class="btn btn-default btn-xs"><span data-toggle="tooltip" data-placement="top" title="Добавить описание" class="glyphicon glyphicon glyphicon-pushpin" aria-hidden="true"></span></a>
+															<a href="#" class="btn btn-default btn-xs"><span data-toggle="tooltip" data-placement="top" title="Редактировать проект"  class="glyphicon glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
+														</div>
+													</div>
                                                     <div class="table-responsive">
                                                         <table class="table table-default table-hover">
                                                             <tr>
@@ -322,6 +330,12 @@
                                         <td colspan="5">
                                             <div class="panel panel-default">
                                                 <div class="panel-body">
+													<div class="btn-toolbar">
+														<div class="btn-group pull-right">
+															<a href="#" class="btn btn-default btn-xs"><span data-toggle="tooltip" data-placement="top" title="Добавить описание" class="glyphicon glyphicon glyphicon-pushpin" aria-hidden="true"></span></a>
+															<a href="#" class="btn btn-default btn-xs"><span data-toggle="tooltip" data-placement="top" title="Редактировать проект"  class="glyphicon glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
+														</div>
+													</div>
                                                     <div class="table-responsive table-hover">
                                                         <table class="table table-default table-hover">
                                                             <tr>
@@ -460,6 +474,12 @@
                                         <td colspan="5">
                                             <div class="panel panel-default">
                                                 <div class="panel-body">
+													<div class="btn-toolbar">
+														<div class="btn-group pull-right">
+															<a href="#" class="btn btn-default btn-xs"><span data-toggle="tooltip" data-placement="top" title="Добавить описание" class="glyphicon glyphicon glyphicon-pushpin" aria-hidden="true"></span></a>
+															<a href="#" class="btn btn-default btn-xs"><span data-toggle="tooltip" data-placement="top" title="Редактировать проект"  class="glyphicon glyphicon glyphicon-wrench" aria-hidden="true"></span></a>
+														</div>
+													</div>
                                                     <div class="table-responsive">
                                                         <table class="table table-default table-hover">
                                                             <tr>
