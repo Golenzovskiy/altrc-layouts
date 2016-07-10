@@ -39,13 +39,15 @@ $(document).ready(function () {
     });
 
     $('[data-toggle="tooltip"]').tooltip();
-	
-    $(".tag").click(function () {
+
+    $(".tag").on("click", function () {
         var selectedTag = $(this).data("tag");
-        $("#filterResult").find("tr[data-tags]").each(function() {
-        	if ($.inArray(selectedTag, $(this).data('tags')) == -1) {
-        		$(this).addClass('hidden');
-        	}
+        $("#filterResult").find("tr[data-tags]").each(function () {
+            if ($.inArray(selectedTag, $(this).data('tags')) == -1) {
+                $(this).addClass('hidden');
+            }
         })
+        $("#tags-button").find("span").removeClass("label-primary").addClass("label-default");
+        $(this).children("span").removeClass("label-default").addClass("label-primary");
     })
 });
