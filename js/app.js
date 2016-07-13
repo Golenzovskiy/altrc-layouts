@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $("#from").datepicker({
         dateFormat: "dd.mm.yy",
         defaultDate: -365,
