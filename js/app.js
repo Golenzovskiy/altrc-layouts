@@ -21,38 +21,38 @@ $(document).ready(function () {
 	
 	$("form").change(function() {
 		$(this).find("button").removeAttr("disabled");
+	});
+	
+	function checkFields(form) {
+		var checks_radios = form.find(':checkbox, :radio'),
+		inputs = form.find(':input').not(checks_radios).not('[type="submit"],[type="button"],[type="reset"]'); 
+	
+		var checked = checks_radios.filter(':checked');
+		var filled = inputs.filter(function(){
+			return $.trim($(this).val()).length > 0;
+		});
 		
-		function checkFields(form) {
-			var checks_radios = form.find(':checkbox, :radio'),
-            inputs = form.find(':input').not(checks_radios).not('[type="submit"],[type="button"],[type="reset"]'); 
-        
-			var checked = checks_radios.filter(':checked');
-			var filled = inputs.filter(function(){
-				return $.trim($(this).val()).length > 0;
-			});
-			
-			if(checked.length + filled.length === 0) {
-				return false;
-			}
-			
-		return true;
+		if(checked.length + filled.length === 0) {
+			return false;
 		}
 		
-		$(function(){
-			$('#form').on('submit',function(e){
-				e.preventDefault();
-				var oneFilled = checkFields($(this));
-				if(oneFilled) {
-					alert('одно заполнено');
-				} else {
-					alert('везде пусто');
-				}
-			});
+	return true;
+	}
+	
+	$(function(){
+		$('#form').on('submit',function(e){
+			e.preventDefault();
+			var oneFilled = checkFields($(this));
+			if(oneFilled) {
+				alert('одно заполнено');
+			} else {
+				alert('везде пусто');
+			}
 		});
 	});
 	
 	/* */
-/*
+
     $('#filter').click(function (e) {
         e.preventDefault();
         var l = Ladda.create(this);
@@ -68,7 +68,7 @@ $(document).ready(function () {
             });
         return false;
     });
-*/
+
     var sampleTags = ['пищёвка', 'стройка', 'абвгд', 'еёжз'];
     $('#FieldTags').tagit({
         availableTags: sampleTags
