@@ -17,41 +17,41 @@ $(document).ready(function () {
         }
     });
 
-	/* */
-	
-	$("form").change(function() {
-		$(this).find("button").removeAttr("disabled");
-	});
-	
-	function checkFields(form) {
-		var checks_radios = form.find(':checkbox, :radio'),
-		inputs = form.find(':input').not(checks_radios).not('[type="submit"],[type="button"],[type="reset"]'); 
-	
-		var checked = checks_radios.filter(':checked');
-		var filled = inputs.filter(function(){
-			return $.trim($(this).val()).length > 0;
-		});
-		
-		if(checked.length + filled.length === 0) {
-			return false;
-		}
-		
-	return true;
-	}
-	
-	$(function(){
-		$('#form').on('submit',function(e){
-			e.preventDefault();
-			var oneFilled = checkFields($(this));
-			if(oneFilled) {
-				alert('одно заполнено');
-			} else {
-				alert('везде пусто');
-			}
-		});
-	});
-	
-	/* */
+    /* */
+
+    $("form").change(function () {
+        $(this).find("button").removeAttr("disabled");
+    });
+
+    function checkFields(form) {
+        var checks_radios = form.find(':checkbox, :radio'),
+            inputs = form.find(':input').not(checks_radios).not('[type="submit"],[type="button"],[type="reset"]');
+
+        var checked = checks_radios.filter(':checked');
+        var filled = inputs.filter(function () {
+            return $.trim($(this).val()).length > 0;
+        });
+
+        if (checked.length + filled.length === 0) {
+            return false;
+        }
+
+        return true;
+    }
+
+    $(function () {
+        $('#form').on('submit', function (e) {
+            e.preventDefault();
+            var oneFilled = checkFields($(this));
+            if (oneFilled) {
+                alert('одно заполнено');
+            } else {
+                alert('везде пусто');
+            }
+        });
+    });
+
+    /* */
 
     $('#filter').click(function (e) {
         e.preventDefault();
@@ -80,26 +80,26 @@ $(document).ready(function () {
         var selectedTag = $(this).data("tag");
         $("#filterResult").find("tr[data-tags]").each(function () {
             if ($.inArray(selectedTag, $(this).data('tags')) == -1) {
-                $(this).addClass('hidden').next().addClass('hidden');                
+                $(this).addClass('hidden').next().addClass('hidden');
             }
-        })
+        });
         $("#tags-button").find("span").removeClass("label-primary").addClass("label-default");
         $(this).children("span").removeClass("label-default").addClass("label-primary");
     });
 
-	$("#delete").click(function() {
-		swal({
-		title: "Удалить проект?",
-		text: "Вы уверены, что хотите полностью удалить проект?", 
-		type: "warning",
-		showCancelButton: true,
-		confirmButtonColor: "#DD6B55",
-		confirmButtonText: "Да, удалить проект!",
-		closeOnConfirm: false
-	},
-	function(){
-		swal("Удалено!", "Проект удалён.", "success");
-	});
-	})
+    $("#delete").click(function () {
+        swal({
+                title: "Удалить проект?",
+                text: "Вы уверены, что хотите полностью удалить проект?",
+                type: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Да, удалить проект!",
+                closeOnConfirm: false
+            },
+            function () {
+                swal("Удалено!", "Проект удалён.", "success");
+            });
+    })
 
 });

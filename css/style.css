@@ -53,3 +53,8 @@ A.tag {
 .label-default {
     font-weight: normal;
 }
+
+div.scroll-table {
+    overflow: auto;
+    height: 320px;
+}
